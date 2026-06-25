@@ -9,6 +9,9 @@ android {
     namespace = "com.example.myapp"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
+    compileOptions {
+        isCoreLibraryDesugaringEnabled = true
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -42,3 +45,4 @@ android {
 flutter {
     source = "../.."
 }
+
